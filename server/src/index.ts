@@ -31,6 +31,9 @@ const HDR: Record<string, OutgoingHttpHeaders> = {
         "content-type": "font/ttf",
         "cache-control": "max-age=86400"
     },
+    *: {
+        "Access-Control-Allow-Origin": "*"
+    },
 };
 
 let nextClientId = 1;
